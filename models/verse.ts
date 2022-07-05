@@ -15,13 +15,6 @@ const verseSchema = new Schema<Verse>({
         type: String, 
         required: true
     },
-    // {timestamps: true}
-    // createdAt :
-    // {
-    //     type: Date, 
-    //     required: true,
-    //     default: null
-    // },
     reference: 
     {
         type: String,
