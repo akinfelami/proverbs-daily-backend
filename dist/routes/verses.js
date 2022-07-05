@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const router = (0, express_1.Router)();
-router.get('/', (req, res) => {
+const verseRouter = (0, express_1.Router)();
+verseRouter.get('/', (req, res) => {
     res.send({ msg: 'Welcome to the Backend API' });
 });
-exports.default = router;
+exports.default = verseRouter;
 //# sourceMappingURL=verses.js.map

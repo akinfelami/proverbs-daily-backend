@@ -1,10 +1,10 @@
-import express from 'express'
 import { Router } from 'express';
-const router = Router();
+import Verse from '../models/verse'
+const verseRouter = Router();
 
 
-router.get('/', (req, res) => {
-	res.send({ msg: 'Welcome to the Backend API' });
+verseRouter.get('/', (req, res) => {
+	res.send("We see verse here");
 });
 
-export default router
+export default verseRouter
