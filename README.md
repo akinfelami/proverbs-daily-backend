@@ -1,2 +1,3 @@
 # proverbs-daily-backend
-The Backend for the Proverbs Daily Mobile App written in typescript
+
+The Backend for the Proverbs Daily Mobile App written in Typescript
