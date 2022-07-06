@@ -12,10 +12,9 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN npm install --production
 
-COPY --from=builder usr/src/app ./dist
+COPY --from=builder usr/src/app/dist ./dist
 
 COPY .env .
-
 
 
 EXPOSE 3000
