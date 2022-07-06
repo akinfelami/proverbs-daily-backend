@@ -2,12 +2,12 @@ import express from 'express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 import logger from 'morgan'
-import 'dotenv/config'
+import dotenv from 'dotenv'
 import verseRouter from './routes/verses'
 import { connect } from 'mongoose';
+dotenv.config()
 
-
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 // Database Config 
