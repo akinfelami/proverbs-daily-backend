@@ -7,7 +7,7 @@ import verseRouter from './routes/verses'
 import { connect } from 'mongoose';
 
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 const app = express();
 
 // Database Config 

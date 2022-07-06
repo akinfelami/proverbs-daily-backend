@@ -4,10 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx tsc",
-    "start": "node dist/index.js",
-    "dev": "concurrently \"npx tsc --watch\" \"node -q dist/index.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -b",
+    "start": "nodemon --exec ts-node index.ts"
   },
   "keywords": [],
   "author": "",
