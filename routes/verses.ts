@@ -42,7 +42,7 @@ verseRouter.get('/', async(req, res) => {
 	}
 	)
 	await newVerse.save();
-	res.send(JSON.stringify(result))	
+	res.send(JSON.stringify(newVerse))	
 
 });
 
