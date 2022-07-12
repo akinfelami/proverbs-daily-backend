@@ -44,6 +44,7 @@ verseRouter.get('/', async(req, res) => {
 	})
 	
 	await newVerse.save();
+	// Returns content with createdAt and Updated At
 	res.send(JSON.stringify(newVerse))	
 
 });
