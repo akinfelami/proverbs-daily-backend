@@ -33,14 +33,16 @@ verseRouter.get('/', async(req, res) => {
 		}
 		
 	})
-	.catch(err=>console.error(err))
+	.catch(err=>console.error(err)) 
+
+
 
 	const newVerse = new Verse({
 		content: result.content,
 		reference: result.reference,
 		translation: result.translation
-	}
-	)
+	})
+	
 	await newVerse.save();
 	res.send(JSON.stringify(newVerse))	
 
@@ -50,5 +52,13 @@ verseRouter.get('/feed', async (req, res) => {
 	const verses = await Verse.find({}).sort({createdAt:-1})
 	res.send(JSON.stringify(verses));
 });
+
+verseRouter.get('/verse-of-the-day', async (req, res) => {
+	const verseoftheday = await Verse.findOne().sort({createdAt:-1})
+	res.send(JSON.stringify(verseoftheday))
+
+}
+
+)
 
 export default verseRouter
